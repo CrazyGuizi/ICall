@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <FrameLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_hand_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/ring_bg_hand_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_pick_up" />
+
+    <ImageView
+        android:id="@+id/iv_pick_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/ring_bg_pick_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/iv_hand_up"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</merge>
